@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="dpto_comercial.list">
+      <field name="name">dpto_comercial list</field>
+      <field name="model">dpto_comercial.dpto_comercial</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="dpto_comercial.action_window">
+      <field name="name">dpto_comercial window</field>
+      <field name="res_model">dpto_comercial.dpto_comercial</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="dpto_comercial.action_server">
+      <field name="name">dpto_comercial server</field>
+      <field name="model_id" ref="model_dpto_comercial_dpto_comercial"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="dpto_comercial" id="dpto_comercial.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="dpto_comercial.menu_1" parent="dpto_comercial.menu_root"/>
+    <menuitem name="Menu 2" id="dpto_comercial.menu_2" parent="dpto_comercial.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="dpto_comercial.menu_1_list" parent="dpto_comercial.menu_1"
+              action="dpto_comercial.action_window"/>
+    <menuitem name="Server to list" id="dpto_comercial" parent="dpto_comercial.menu_2"
+              action="dpto_comercial.action_server"/>
+-->
+  </data>
+</odoo>

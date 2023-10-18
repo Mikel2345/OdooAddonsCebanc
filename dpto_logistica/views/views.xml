@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="logistica.list">
+      <field name="name">logistica list</field>
+      <field name="model">logistica.logistica</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="logistica.action_window">
+      <field name="name">logistica window</field>
+      <field name="res_model">logistica.logistica</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="logistica.action_server">
+      <field name="name">logistica server</field>
+      <field name="model_id" ref="model_logistica_logistica"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="logistica" id="logistica.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="logistica.menu_1" parent="logistica.menu_root"/>
+    <menuitem name="Menu 2" id="logistica.menu_2" parent="logistica.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="logistica.menu_1_list" parent="logistica.menu_1"
+              action="logistica.action_window"/>
+    <menuitem name="Server to list" id="logistica" parent="logistica.menu_2"
+              action="logistica.action_server"/>
+-->
+  </data>
+</odoo>
